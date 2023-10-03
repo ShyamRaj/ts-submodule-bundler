@@ -1,0 +1,42 @@
+{
+  "name": "@a/core-lib",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "exports": {
+    "./cars": {
+      "import": {
+        "types": "./dist/esm/cars/cars.d.ts",
+        "default": "./dist/esm/cars.js"
+      },
+      "require": {
+        "types": "./dist/cjs/cars/cars.d.ts",
+        "default": "./dist/cjs/cars.js"
+      }
+    },
+    "./fruits": {
+      "import": {
+        "types": "./dist/esm/fruits/fruits.d.ts",
+        "default": "./dist/esm/fruits.js"
+      },
+      "require": {
+        "types": "./dist/cjs/fruits/fruits.d.ts",
+        "default": "./dist/cjs/fruits.js"
+      }
+    }
+  },
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-typescript": "^11.1.4",
+    "@types/node": "^20.8.2",
+    "rollup": "^3.29.4",
+    "rollup-plugin-cleaner": "^1.0.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "tslib": "^2.6.2"
+  }
+}

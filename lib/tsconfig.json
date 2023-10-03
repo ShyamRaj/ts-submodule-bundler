@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "declaration": true,
+    "baseUrl": ".",
+    "rootDir": "src",
+    "composite": true,
+    "plugins": [],
+    "paths": {
+      "@a/core-lib/cars": ["./dist/cars/cars.d.ts"],
+      "@a/core-lib/fruits": ["./dist/fruits/fruits.d.ts"]
+    }
+  },
+}

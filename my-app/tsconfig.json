@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
+    "types": ["node"],
+    "allowSyntheticDefaultImports": true,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "jsx": "react-jsx",
+//    "paths": {
+//      "@a/core-lib/cars": ["@a/core-lib/cars/dist/cars/cars.d.ts"],
+//      "@a/core-lib/fruits": ["@a/core-lib/cars/dist/fruits/fruits.d.ts"]
+//    }
+  },
+  "include": [
+    "src"
+  ]
+}
